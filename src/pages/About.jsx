@@ -173,14 +173,14 @@ const About = () => {
   <div className="absolute inset-0 bg-gray-800 bg-opacity-80"></div> {/* Overlay */}
 
   <div className="relative container mx-auto text-center">
-    <SectionHeading title="Our Featured Courses" /> 
+    <SectionHeading title="Our Featured Courses" color= "green-200" /> 
     <p className="text-xl font-bold italic text-gray-200 mb-6 max-w-2xl mx-auto">
       Have questions or ready to start your learning journey? Reach out to us today!
     </p>
     <HoverButton link="/contact" text="Get in Touch" color="indigo" />
   </div>
 </div>
-      <FAQ />
+      {/* <FAQ /> */}
     </section>
   );
 };

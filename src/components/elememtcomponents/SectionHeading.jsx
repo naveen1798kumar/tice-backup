@@ -1,10 +1,10 @@
 import React from "react";
 
-function SectionHeading({ title, span, description }) {
+function SectionHeading({ title, span, description, color="gray-800" }) {
   return (
-    <div className="text-center px-4">
+    <div className="text-center p-4">
       {/* Title with Responsive Typography */}
-      <h2 className="relative text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-800 mb-4 flex items-center justify-center">
+      <h2 className={`relative text-2xl sm:text-3xl md:text-4xl text-${color} font-extrabold mb-4 flex items-center justify-center`}>
         <span className="w-10 sm:w-12 md:w-16 h-1 bg-green-600 inline-block mr-3 rounded-full"></span>
         {title}
         <span className="w-10 sm:w-12 md:w-16 h-1 bg-indigo-600 inline-block ml-3 rounded-full"></span>

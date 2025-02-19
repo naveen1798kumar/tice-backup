@@ -20,7 +20,7 @@ const Footer = () => {
         className={`bg-fixed bg-cover bg-center bg-no-repeat m-0 md:m-2 rounded-b-2xl md:rounded-lg overflow-hidden shadow-lg`}
         style={{ backgroundImage: `url(${Banner})` }}
       >
-        <div className="max-w-7xl mx-auto py-10 p-4 backdrop-blur-lg bg-white/10 rounded-lg">
+        <div className="max-w-7xl mx-auto py-10 p-4 backdrop-blur-lg bg-black/50 rounded-lg">
           {/* Top Section */}
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {/* About & Get Started */}
