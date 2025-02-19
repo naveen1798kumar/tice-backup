@@ -18,7 +18,7 @@ const Contact = () => {
   };
 
   return (
-    <section className=" bg-gray-100">
+    <section className=" bg-gray-200">
 
 <Banner backgroundImage={ContactBanner} 
 title="Get in touch "
@@ -28,7 +28,7 @@ description="Get your career to the next level."
   data-aos="fade-up" />
 
           {/* Contact Section */}
-        <section className="py-16 bg-gray-100">
+        <section className="py-16 bg-gray-200">
           {/* Description Section */}
 <div className="container mx-auto p-8 my-8 bg-gray-200 rounded-xl shadow-lg">
   <SectionHeading title="Get in Touch with Us"/>
@@ -46,7 +46,7 @@ description="Get your career to the next level."
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Contact Form */}
           <div className="bg-white p-8 shadow-lg rounded-lg">
-            <h2 className="text-3xl font-semibold text-gray-800 mb-6">Send Us a Message</h2>
+            <h2 className="text-3xl font-semibold text-gray-800 mb-6 border-l-4 border-indigo-800 p-1 pl-4 bg-gray-200">Send Us a Message</h2>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label className="block text-gray-600 font-medium mb-2">Name</label>
@@ -83,7 +83,7 @@ description="Get your career to the next level."
               </div>
               <button
                 type="submit"
-                className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-500 transition"
+                className="w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-500 transition"
               >
                 Send Message
               </button>
@@ -93,7 +93,7 @@ description="Get your career to the next level."
           {/* Contact Information */}
           <div className="space-y-8">
             <div className="bg-white p-8 shadow-lg rounded-lg">
-              <h2 className="text-3xl font-semibold text-gray-800 mb-6">Contact Details</h2>
+              <h2 className="text-3xl font-semibold text-gray-800 mb-6 border-l-4 border-indigo-800 p-1 pl-4 bg-gray-200">Contact Details</h2>
               <p className="text-gray-600 mb-6">Feel free to reach out to us through any of the following ways:</p>
               <div className="space-y-4">
                 <div className="flex items-center text-gray-700">
@@ -113,7 +113,7 @@ description="Get your career to the next level."
             
             {/* Map Section */}
             <div className="bg-white p-8 shadow-lg rounded-lg">
-              <h2 className="text-3xl font-semibold text-gray-800 mb-6">Our Location</h2>
+              <h2 className="text-3xl font-semibold text-gray-800 mb-6 border-l-4 border-indigo-800 p-1 pl-4 bg-gray-200">Our Location</h2>
               <div className="w-full h-64 rounded-lg overflow-hidden">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.631993977541!2d77.51622437451344!3d10.450748865117585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9de6360313ee1%3A0x420bd092b0aab17f!2sAnnai%20Educational%20Trust!5e0!3m2!1sen!2sin!4v1732617140667!5m2!1sen!2sin"
