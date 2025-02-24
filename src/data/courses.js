@@ -217,8 +217,9 @@ const courses = [
         title: 'React JS Developer Course',
         description: 'Learn React.js to build dynamic and scalable frontend applications.',
         details: 'This course covers JSX, components, state management, hooks, and working with APIs in React. You will also learn Redux and Context API for efficient state management.',
+        detailedDescription: 'The React JS Developer Course is designed for developers who want to create high-performance, interactive web applications. This course covers the fundamentals of React, including JSX, components, props, and state. You will dive deep into hooks, useContext, and useEffect for efficient component management. Advanced topics include Redux for state management, handling API requests, and optimizing application performance. By the end of the course, you will be able to build complex single-page applications (SPAs) with real-world use cases.',
         icon: '⚛️',
-        topics: [], // Topics not required here
+        topics: [],
         image: FullStack.ReactStack
       },
       {
@@ -226,13 +227,13 @@ const courses = [
         title: 'Fundamentals in HTML/CSS & JavaScript',
         description: 'Introduction to web development basics for students and beginners.',
         details: 'This course teaches the core building blocks of the web: HTML for structure, CSS for styling, and JavaScript for interactivity. Perfect for beginners looking to start web development.',
+        detailedDescription: 'This beginner-friendly course is perfect for those who want to kickstart their web development journey. You will learn how HTML is used to structure web pages, CSS is used to style them, and JavaScript is used to make them interactive. Topics include semantic HTML, responsive design, CSS Flexbox and Grid, JavaScript fundamentals, DOM manipulation, and event handling. By the end of this course, you will be able to build static and dynamic web pages with a professional look.',
         icon: '🌐',
-        topics: [], // Topics not required here
+        topics: [],
         image: FullStack.HTML
       }
     ]
   },
-
   {
     category: 'Backend Development & Database Courses',
     courses: [
@@ -241,8 +242,9 @@ const courses = [
         title: 'Node.js Developer Course',
         description: 'Develop scalable server-side applications using Node.js and Express.',
         details: 'This course covers backend development with Node.js, Express.js, handling databases with MongoDB and MySQL, authentication, and building REST APIs.',
+        detailedDescription: 'The Node.js Developer Course provides in-depth knowledge of server-side programming using JavaScript. You will learn how to create fast and scalable server applications with Node.js and Express.js. The course also covers database integration with MongoDB and MySQL, authentication with JWT, and building secure RESTful APIs. You will work on projects like an e-commerce API, user authentication system, and real-time chat applications.',
         icon: '🌍',
-        topics: [], // Topics not required here
+        topics: [],
         image: FullStack.NodeJS
       },
       {
@@ -250,8 +252,9 @@ const courses = [
         title: 'MySQL Course',
         description: 'Learn MySQL for efficient database management and SQL queries.',
         details: 'Understand relational databases, write complex SQL queries, optimize databases, and integrate MySQL with backend technologies.',
+        detailedDescription: 'This course is designed for those who want to master SQL and database management. You will learn about database architecture, normalization, indexing, and writing efficient SQL queries. The course covers CRUD operations, joins, subqueries, stored procedures, and database security. You will also learn how to integrate MySQL with backend frameworks like Node.js, PHP, and Python. By the end of this course, you will be able to design and manage databases efficiently for various applications.',
         icon: '💾',
-        topics: [], // Topics not required here
+        topics: [],
         image: FullStack.MySQL
       },
       {
@@ -259,13 +262,13 @@ const courses = [
         title: 'Linux Administration Course',
         description: 'Master Linux commands, server management, and cloud deployments.',
         details: 'Learn Linux system administration, shell scripting, server setup, and cloud deployment with AWS and Docker.',
+        detailedDescription: 'This Linux Administration course is ideal for those looking to understand Linux-based environments. You will learn essential Linux commands, user management, file permissions, networking, and shell scripting. The course also covers server setup, process management, and security hardening techniques. Advanced topics include cloud deployment using AWS and Docker. By the end of this course, you will have the skills to manage Linux servers and automate administrative tasks.',
         icon: '🐧',
-        topics: [], // Topics not required here
+        topics: [],
         image: FullStack.Linux
       }
     ]
   },
-
   {
     category: 'Software Development & Testing',
     courses: [
@@ -274,8 +277,9 @@ const courses = [
         title: 'Java Developer Course',
         description: 'Comprehensive training in Java programming, OOP concepts, and Spring Boot framework.',
         details: 'Learn Java programming, object-oriented concepts, multithreading, data structures, and backend development with Spring Boot.',
+        detailedDescription: 'The Java Developer Course is designed to provide in-depth knowledge of Java programming and its real-world applications. You will start with the basics of Java, covering OOP principles, collections, and exception handling. You will then move to advanced topics like multithreading, file handling, and JDBC. The course also includes backend development using Spring Boot and Hibernate, equipping you with the skills needed to build scalable Java-based applications.',
         icon: '☕',
-        topics: [], // Topics not required here
+        topics: [],
         image: FullStack.JavaDev
       },
       {
@@ -283,8 +287,9 @@ const courses = [
         title: 'Python Developer Course',
         description: 'Learn Python programming, Flask/Django, and automation techniques.',
         details: 'Master Python syntax, data structures, automation, web development with Django and Flask, and machine learning basics.',
+        detailedDescription: 'This Python Developer Course is structured to take you from a beginner to an advanced level in Python. You will learn Python fundamentals, data structures, and object-oriented programming. The course also covers automation using Python scripts, web development with Flask and Django, and an introduction to data science and machine learning. By the end of this course, you will be proficient in Python for both web development and automation tasks.',
         icon: '🐍',
-        topics: [], // Topics not required here
+        topics: [],
         image: FullStack.Python
       },
       {
@@ -292,13 +297,13 @@ const courses = [
         title: 'Software Testing Course',
         description: 'Master manual and automation testing with Selenium and JUnit.',
         details: 'Learn software testing fundamentals, manual testing techniques, Selenium WebDriver, JUnit, TestNG, and performance testing.',
+        detailedDescription: 'The Software Testing Course is designed to help you become proficient in both manual and automated testing. You will learn how to write test cases, conduct functional testing, and use tools like Selenium WebDriver for automation. The course also covers unit testing with JUnit, performance testing, and debugging techniques. By the end of the course, you will be able to efficiently test software applications for functionality, usability, and performance.',
         icon: '🛠️',
-        topics: [], // Topics not required here
+        topics: [],
         image: FullStack.Selenium
       }
     ]
   },
-
   {
     category: 'Mobile App Development',
     courses: [
@@ -307,101 +312,113 @@ const courses = [
         title: 'Android Developer Course',
         description: 'Learn to build Android applications using Java and Kotlin.',
         details: 'Master Android Studio, UI design, API integration, and database management to create powerful Android apps.',
+        detailedDescription: 'The Android Developer Course is perfect for those looking to build mobile applications from scratch. You will learn Android development using Java and Kotlin, covering UI/UX design principles, activity lifecycle, and API integration. The course also includes Firebase for real-time databases, push notifications, and authentication. By the end of the course, you will have hands-on experience building fully functional Android apps.',
         icon: '📱',
-        topics: [], // Topics not required here
+        topics: [],
         image: '/images/courses/android.jpg'
       }
     ]
-  },  
+  }
+  
 ];
 
 const diplomaCourse = [
-  {
-    category: 'Computer & Office Application Courses',
-    courses: [
-      {
-        id: 1,
-        title: 'Office Application Course',
-        description: 'Learn Microsoft Office tools including Word, Excel, and PowerPoint.',
-        details: 'Get hands-on training in Microsoft Word, Excel formulas, PowerPoint presentations, and advanced Excel functions.',
-        icon: '📄',
-        topics: [],
-        image: '/images/courses/office.jpg'
-      },
-      {
-        id: 2,
-        title: 'Computer Accounting Course',
-        description: 'Master Tally, QuickBooks, and accounting software for finance management.',
-        details: 'Understand business accounting principles, GST calculations, and financial management using Tally and QuickBooks.',
-        icon: '💰',
-        topics: [],
-        image: '/images/courses/accounting.jpg'
-      },
-      {
-        id: 3,
-        title: 'Certificate in Office Applications',
-        description: 'Earn a certificate by mastering essential office software tools.',
-        details: 'This course covers in-depth training in Microsoft Office suite, including advanced features in Word, Excel, and PowerPoint to prepare you for professional environments.',
-        icon: '🎓',
-        topics: [],
-        image: '/images/courses/certificate-office.jpg'
-      },
-      {
-        id: 4,
-        title: 'Desktop Publishing',
-        description: 'Learn the art of desktop publishing and graphic design.',
-        details: 'Gain proficiency in desktop publishing software like Adobe InDesign and QuarkXPress, learn layout design, typography, and prepress processes for professional publishing.',
-        icon: '🖨️',
-        topics: [],
-        image: '/images/courses/desktop-publishing.jpg'
-      },
-      {
-        id: 5,
-        title: 'Certificate in Computer Accounts',
-        description: 'Acquire essential skills in computer-based accounting.',
-        details: 'This course covers the fundamentals of computerized accounting, including the use of popular accounting software, financial reporting, and bookkeeping techniques.',
-        icon: '📊',
-        topics: [],
-        image: '/images/courses/certificate-computer-accounts.jpg'
-      },
-      {
-        id: 6,
-        title: 'Diploma in Computer Application',
-        description: 'A comprehensive diploma covering various computer applications.',
-        details: 'Learn about a range of computer applications including office productivity tools, database management, and basic programming to boost your computer literacy.',
-        icon: '💻',
-        topics: [],
-        image: '/images/courses/diploma-computer-application.jpg'
-      },
-      {
-        id: 7,
-        title: 'Diploma in Multimedia Operation',
-        description: 'Master multimedia tools for creative production.',
-        details: 'This diploma course teaches you video editing, audio production, graphic design, and animation using industry-standard software to prepare you for a career in multimedia production.',
-        icon: '🎬',
-        topics: [],
-        image: '/images/courses/diploma-multimedia.jpg'
-      },
-      {
-        id: 8,
-        title: 'Diploma in Computer Programming',
-        description: 'Develop foundational programming skills with a comprehensive diploma.',
-        details: 'Covering programming fundamentals, algorithm design, and problem-solving techniques, this diploma equips you with essential coding skills using languages such as Python, Java, or C++.',
-        icon: '👨‍💻',
-        topics: [],
-        image: '/images/courses/diploma-programming.jpg'
-      },
-      {
-        id: 9,
-        title: 'Diploma in Hardware Technology',
-        description: 'Learn the fundamentals of computer hardware and technology.',
-        details: 'This course covers computer hardware components, system assembly, troubleshooting, and maintenance techniques to prepare you for roles in IT support and hardware technology.',
-        icon: '🖥️',
-        topics: [],
-        image: '/images/courses/diploma-hardware.jpg'
-      }
-    ]
-  }
+{
+  category: 'Computer & Office Application Courses',
+  courses: [
+    {
+      id: 1,
+      title: 'Office Application Course',
+      description: 'Learn Microsoft Office tools including Word, Excel, and PowerPoint.',
+      details: 'Get hands-on training in Microsoft Word, Excel formulas, PowerPoint presentations, and advanced Excel functions.',
+      detailedDescription: 'This course provides a thorough understanding of Microsoft Office applications, equipping you with the skills needed for document creation, data analysis, and professional presentations. You will learn advanced formatting in Word, Excel formulas, functions, and data visualization techniques, along with PowerPoint presentation design. Ideal for students, professionals, and anyone looking to improve their office productivity skills.',
+      icon: '📄',
+      topics: [],
+      image: '/images/courses/office.jpg'
+    },
+    {
+      id: 2,
+      title: 'Computer Accounting Course',
+      description: 'Master Tally, QuickBooks, and accounting software for finance management.',
+      details: 'Understand business accounting principles, GST calculations, and financial management using Tally and QuickBooks.',
+      detailedDescription: 'This course is designed for individuals looking to enhance their accounting skills using modern software tools like Tally and QuickBooks. You will learn the fundamentals of financial accounting, bookkeeping, GST calculations, and business transactions. By the end of the course, you will be able to efficiently manage financial records, generate reports, and handle business transactions digitally.',
+      icon: '💰',
+      topics: [],
+      image: '/images/courses/accounting.jpg'
+    },
+    {
+      id: 3,
+      title: 'Certificate in Office Applications',
+      description: 'Earn a certificate by mastering essential office software tools.',
+      details: 'This course covers in-depth training in Microsoft Office suite, including advanced features in Word, Excel, and PowerPoint to prepare you for professional environments.',
+      detailedDescription: 'The Certificate in Office Applications course offers a structured approach to learning Microsoft Office tools. You will develop expertise in word processing, spreadsheet management, and presentation design. This certification is ideal for individuals seeking to boost their administrative skills and enhance productivity in a corporate or educational environment.',
+      icon: '🎓',
+      topics: [],
+      image: '/images/courses/certificate-office.jpg'
+    },
+    {
+      id: 4,
+      title: 'Desktop Publishing',
+      description: 'Learn the art of desktop publishing and graphic design.',
+      details: 'Gain proficiency in desktop publishing software like Adobe InDesign and QuarkXPress, learn layout design, typography, and prepress processes for professional publishing.',
+      detailedDescription: 'This course is tailored for aspiring designers and publishing professionals. You will learn to use tools like Adobe InDesign and QuarkXPress to create visually appealing publications, brochures, and magazines. Topics include typography, page layout, color theory, and digital prepress processes. By the end of this course, you will have the skills to design and format content for print and digital media.',
+      icon: '🖨️',
+      topics: [],
+      image: '/images/courses/desktop-publishing.jpg'
+    },
+    {
+      id: 5,
+      title: 'Certificate in Computer Accounts',
+      description: 'Acquire essential skills in computer-based accounting.',
+      details: 'This course covers the fundamentals of computerized accounting, including the use of popular accounting software, financial reporting, and bookkeeping techniques.',
+      detailedDescription: 'This course is designed to provide in-depth knowledge of accounting software and financial management. You will learn to record transactions, prepare financial statements, and generate reports using software like Tally and QuickBooks. Ideal for students and professionals aiming to develop strong accounting and financial analysis skills.',
+      icon: '📊',
+      topics: [],
+      image: '/images/courses/certificate-computer-accounts.jpg'
+    },
+    {
+      id: 6,
+      title: 'Diploma in Computer Application',
+      description: 'A comprehensive diploma covering various computer applications.',
+      details: 'Learn about a range of computer applications including office productivity tools, database management, and basic programming to boost your computer literacy.',
+      detailedDescription: 'This diploma course provides a strong foundation in computer applications, covering topics such as Microsoft Office, database management, and introductory programming. You will develop skills in document processing, spreadsheet handling, and basic coding, making it ideal for students, office professionals, and beginners looking to enhance their digital skills.',
+      icon: '💻',
+      topics: [],
+      image: '/images/courses/diploma-computer-application.jpg'
+    },
+    {
+      id: 7,
+      title: 'Diploma in Multimedia Operation',
+      description: 'Master multimedia tools for creative production.',
+      details: 'This diploma course teaches you video editing, audio production, graphic design, and animation using industry-standard software to prepare you for a career in multimedia production.',
+      detailedDescription: 'This course is designed for individuals interested in multimedia production. You will learn to use tools like Adobe Premiere Pro, After Effects, Photoshop, and Audacity to create engaging visual and audio content. Topics include video editing, animation, sound design, and digital storytelling. By the end of the course, you will be proficient in creating high-quality multimedia projects for social media, marketing, and entertainment industries.',
+      icon: '🎬',
+      topics: [],
+      image: '/images/courses/diploma-multimedia.jpg'
+    },
+    {
+      id: 8,
+      title: 'Diploma in Computer Programming',
+      description: 'Develop foundational programming skills with a comprehensive diploma.',
+      details: 'Covering programming fundamentals, algorithm design, and problem-solving techniques, this diploma equips you with essential coding skills using languages such as Python, Java, or C++.',
+      detailedDescription: 'This diploma course is ideal for beginners who want to step into the world of programming. You will learn the fundamentals of coding, including syntax, data structures, and algorithm design. The course covers multiple programming languages such as Python, Java, and C++, enabling you to build simple applications and software solutions. By the end of this course, you will be prepared to pursue a career in software development or further your studies in programming.',
+      icon: '👨‍💻',
+      topics: [],
+      image: '/images/courses/diploma-programming.jpg'
+    },
+    {
+      id: 9,
+      title: 'Diploma in Hardware Technology',
+      description: 'Learn the fundamentals of computer hardware and technology.',
+      details: 'This course covers computer hardware components, system assembly, troubleshooting, and maintenance techniques to prepare you for roles in IT support and hardware technology.',
+      detailedDescription: 'This course is perfect for individuals interested in understanding the inner workings of computer hardware. You will learn about computer components, assembly, troubleshooting, and system maintenance. The course also covers networking basics, peripheral device management, and hardware repair techniques. By the end of the course, you will have the skills needed for IT support roles and computer maintenance services.',
+      icon: '🖥️',
+      topics: [],
+      image: '/images/courses/diploma-hardware.jpg'
+    }
+  ]
+}
+
 ]
 
 export {courses, diplomaCourse};

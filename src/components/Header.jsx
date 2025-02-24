@@ -26,7 +26,12 @@ const Header = ({ onToggleSidebar }) => {
   const defaultLinkClass =
     "font-medium text-gray-700 hover:text-indigo-500 hover:bg-gray-100 px-4 py-2 rounded-lg transition-all duration-300";
 
+    const handleClick = () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+
   return (
+    
     <header
       className={`w-full sticky top-0 left-0 z-50 backdrop-blur-lg transition-all duration-300 ease-in-out ${
         isScrolled
@@ -58,6 +63,7 @@ const Header = ({ onToggleSidebar }) => {
                   `px-3 py-2 rounded-md ${
                     isActive ? activeLinkClass : defaultLinkClass
                   }`}
+            onClick={handleClick}
             >Home</NavLink>
           </li>
           <li>
@@ -66,6 +72,7 @@ const Header = ({ onToggleSidebar }) => {
               `px-3 py-2 rounded-md ${
                 isActive ? activeLinkClass : defaultLinkClass
               }`}
+            onClick={handleClick}
             >About</NavLink>
           </li>
           <li>
@@ -74,6 +81,7 @@ const Header = ({ onToggleSidebar }) => {
               `px-3 py-2 rounded-md ${
                 isActive ? activeLinkClass : defaultLinkClass
               }`}
+              onClick={handleClick}
             >Courses</NavLink>
           </li>
           <li>
@@ -82,10 +90,11 @@ const Header = ({ onToggleSidebar }) => {
               `px-3 py-2 rounded-md ${
                 isActive ? activeLinkClass : defaultLinkClass
               }`}
+              onClick={handleClick}
             >Contact</NavLink>
           </li>
           <li>
-            <Link className="px-4 py-2 rounded-full bg-green-500 text-white text-sm font-medium shadow-md hover:bg-[##009961] transition-all duration-300" to={"/courses-online"}>
+            <Link className="px-4 py-2 rounded-full bg-green-500 text-white text-sm font-medium shadow-md hover:bg-[##009961] transition-all duration-300" to={"/courses-online"} onClick={handleClick}>
               Get Started
             </Link>
           </li>
@@ -93,7 +102,7 @@ const Header = ({ onToggleSidebar }) => {
 
 
         {/* Mobile Get Started Button */}
-        <button className="md:hidden px-4 py-2 rounded-full bg-green-500 text-white text-sm font-medium shadow-md hover:bg-[##009961] transition-all duration-300">
+        <button className="md:hidden px-4 py-2 rounded-full bg-green-500 text-white text-sm font-medium shadow-md hover:bg-[##009961] transition-all duration-300" to={"/courses-online"} onClick={handleClick}>
           Get Started
         </button>
 

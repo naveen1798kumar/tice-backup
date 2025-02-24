@@ -40,7 +40,7 @@ function MobileSidebar({ isSidebarOpen, onClose }) {
             <li key={index}>
               <NavLink
                 to={`/${item.toLowerCase()}`}
-                onClick={onClose}
+                onClick={() => { onClose(); handleClick(); }}
                 className={({ isActive }) =>
                   isActive ? activeLinkClass : defaultLinkClass
                 }

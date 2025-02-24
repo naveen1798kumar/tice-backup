@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import SectionHeading from './elememtcomponents/SectionHeading';
 import HoverButton from './elememtcomponents/HoverButton';
 
-import Mern from "../assets/place4.jpg";
-import Testing from "../assets/place5.jpg";
-import App from "../assets/place6.jpg";
+import Mern from "../assets/Courses/web-development.jpg";
+import App from "../assets/Courses/android-development.jpg";
+import Tally from "../assets/Courses/office-courses.jpg";
 
 const featuredCourses = [
   {
@@ -13,25 +13,31 @@ const featuredCourses = [
     title: "MERN Stack Development",
     description: "Master the MERN (MongoDB, Express.js, React.js, Node.js) stack and build dynamic, scalable, and high-performance full-stack applications. Learn database management with MongoDB, backend development with Express.js and Node.js, and frontend development using React.js. Gain hands-on experience with REST APIs, authentication, state management, and deployment techniques.",
     image: Mern,
-    link: "/courses/mern",
+    link: "/courses",
   },
   {
     id: 2,
-    title: "Manual & Automation Testing",
-    description: "Understand software testing fundamentals, methodologies, and best practices. Learn manual testing techniques for identifying bugs and defects, followed by automation testing using Selenium, JUnit, TestNG, and Postman for API testing. Explore test case creation, automation frameworks, debugging, and CI/CD integration to ensure software quality and efficiency.",
-    image: Testing,
-    link: "/courses/testing",
+    title: "Android App Development",
+    // description: "Understand software testing fundamentals, methodologies, and best practices. Learn manual testing techniques for identifying bugs and defects, followed by automation testing using Selenium, JUnit, TestNG, and Postman for API testing. Explore test case creation, automation frameworks, debugging, and CI/CD integration to ensure software quality and efficiency.",
+    description: "Develop modern Android applications using Java and Kotlin. Learn the fundamentals of Android Studio, UI/UX design principles, Activity and Fragment lifecycle, API integration, Firebase database, push notifications, and advanced topics like MVVM architecture, Jetpack Compose, and performance optimization. Create real-world projects to solidify your learning.",
+    image: App,
+    link: "/courses",
   },
   {
     id: 3,
-    title: "Android App Development",
-    description: "Develop modern Android applications using Java and Kotlin. Learn the fundamentals of Android Studio, UI/UX design principles, Activity and Fragment lifecycle, API integration, Firebase database, push notifications, and advanced topics like MVVM architecture, Jetpack Compose, and performance optimization. Create real-world projects to solidify your learning.",
-    image: App,
-    link: "/courses/android",
+    title: "Office & Accounting Mastery",
+    description: "Learn Microsoft Office tools for document creation, data analysis, and presentations. Master Tally and QuickBooks for bookkeeping, GST calculations, and financial management. This course equips you with essential office and accounting skills for professional success",
+    image: Tally,
+    link: "/courses",
   },
 ];
 
 const CoursesPreview = () => {
+
+  const handleClick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <section className="py-12 bg-gray-100">
       <div className="container mx-auto">
@@ -65,6 +71,7 @@ const CoursesPreview = () => {
                 <Link
                   to={project.link}
                   className="inline-block bg-green-600 hover:bg-green-700 text-white py-2 px-6 mt-4 rounded-lg text-lg font-semibold transition-all duration-300 shadow-lg"
+                  onClick={handleClick}
                 >
                   Learn More
                 </Link>
