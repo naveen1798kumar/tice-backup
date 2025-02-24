@@ -1,12 +1,13 @@
 import React from "react";
 import ComingSoon from "../assets/comingsoon.png";
-import SectionHeading from "../components/elememtcomponents/SectionHeading";
+import SectionBanner from "../components/elememtcomponents/SectionBanner";
+
 
 function OnlineCourses() {
   return (
     <div className="flex items-center justify-center min-h-screen p-4 bg-gray-100">
       <div className="bg-white shadow-lg rounded-lg p-6 md:p-10 w-full max-w-2xl flex flex-col items-center text-center">
-        <SectionHeading
+        <SectionBanner
           title="Online Courses"
           span="Explore our courses online,"
           description="Designed for remote access."

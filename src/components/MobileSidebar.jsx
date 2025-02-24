@@ -1,26 +1,28 @@
 import React from "react";
+import ReactDOM from "react-dom";
 import { NavLink } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 
 function MobileSidebar({ isSidebarOpen, onClose }) {
+  if (!isSidebarOpen) return null;
+
   const activeLinkClass =
     "font-semibold text-white bg-gradient-to-r from-blue-500 to-indigo-600 px-4 py-2 rounded-lg shadow-md transition-all duration-300";
   const defaultLinkClass =
     "font-medium text-gray-700 hover:text-indigo-500 hover:bg-gray-100 px-4 py-2 rounded-lg transition-all duration-300";
 
-  return (
+  return  ReactDOM.createPortal(
     <>
       {/* Sidebar Background Overlay (Click to close) */}
-      {isSidebarOpen && (
+
         <div
           className="fixed inset-0 bg-black bg-opacity-50 z-40"
           onClick={onClose}
         ></div>
-      )}
 
       {/* Mobile Sidebar */}
       <div
-        className={`fixed top-0 right-0 h-full w-64 bg-white shadow-lg z-50 transform ${
+        className={`fixed top-0 right-0 h-full w-[50%] bg-white shadow-lg z-50 transform ${
           isSidebarOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 ease-in-out md:hidden`}
       >
@@ -54,7 +56,8 @@ function MobileSidebar({ isSidebarOpen, onClose }) {
           </li>
         </ul>
       </div>
-    </>
+    </>,
+    document.getElementById("portal-root")
   );
 }
 

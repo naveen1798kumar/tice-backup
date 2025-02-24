@@ -95,12 +95,25 @@ const Footer = () => {
             </span>
 
             <div className="flex space-x-4 mt-4 md:mt-0">
-              {[FaTwitter, FaYoutube, FaFacebook].map((Icon, idx) => (
+              {/* {[FaTwitter, FaYoutube, FaFacebook].map((Icon, idx) => (
                 <div key={idx} className="group relative z-10 size-[2rem] text-indigo-400 hover:text-white flex justify-center items-center">
                   <div className="absolute inset-0 size-[2rem] bg-white rounded-md group-hover:bg-cyan-500 text-gray-400 group-hover:text-black group-hover:rotate-[45deg] transition-all duration-300 -z-10"></div>
                   <a href="#"><Icon size={20} /></a>
                 </div>
-              ))}
+              ))} */}
+
+              <div className="group relative z-10 size-[2rem] text-indigo-400 hover:text-white flex justify-center items-center">
+                  <div className="absolute inset-0 size-[2rem] bg-white rounded-md group-hover:bg-cyan-500 text-gray-400 group-hover:text-black group-hover:rotate-[45deg] transition-all duration-300 -z-10"></div>
+                  <a href="#"><FaTwitter size={20} /></a>
+                </div>
+                <div className="group relative z-10 size-[2rem] text-indigo-400 hover:text-white flex justify-center items-center">
+                  <div className="absolute inset-0 size-[2rem] bg-white rounded-md group-hover:bg-red-500 text-gray-400 group-hover:text-black group-hover:rotate-[45deg] transition-all duration-300 -z-10"></div>
+                  <a href="#"><FaYoutube size={20} /></a>
+                </div>
+                <div className="group relative z-10 size-[2rem] text-indigo-400 hover:text-white flex justify-center items-center">
+                  <div className="absolute inset-0 size-[2rem] bg-white rounded-md group-hover:bg-indigo-500 text-gray-400 group-hover:text-black group-hover:rotate-[45deg] transition-all duration-300 -z-10"></div>
+                  <a href="#"><FaFacebook size={20} /></a>
+                </div>
             </div>
           </div>
         </div>

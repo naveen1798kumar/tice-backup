@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaLaptopCode, FaPaintBrush, FaDatabase, FaChartLine } from 'react-icons/fa';
-import courses from '../data/courses.js';
+import {courses, diplomaCourse} from '../data/courses.js';
 import Banner from "../components/Banner";
 import Images from "../assets/IMG_20241210_172713_386.jpg";
 import CoursesBanner from "../assets/Banners/Courses-Banner.jpg";
 import SectionHeading from '../components/elememtcomponents/SectionHeading.jsx';
+import SectionBanner from '../components/elememtcomponents/SectionBanner.jsx';
 import FAQ from '../components/FAQ.jsx';
 
 
@@ -33,7 +34,7 @@ const Courses = () => {
 
   {/*  */}
   <section className=" py-12 px-6 md:px-12 backdrop-blur-lg bg-white/10 rounded-lg shadow-md">
-  <SectionHeading 
+  <SectionBanner 
     title="Welcome to Our Courses" 
     span="Your Gateway" 
     description="to an Exciting IT Career!"
@@ -52,10 +53,11 @@ const Courses = () => {
   </div>
 </section>    
     
-      <div className="container mx-auto py-16 px-4">
+    {/* In-Demand IT Skills */}
+      <div className="container mx-auto py-8 px-4">
       {/* Courses */}
       <div className='py-12 px-6'>
-      <SectionHeading title="Our Courses"
+      <SectionHeading title="Our In-Demand IT Programs"
         span="Best courses in Coimbatore"
         description="to get placed in IT"
         color= "green-200"/>
@@ -92,6 +94,53 @@ const Courses = () => {
         ))}
       </div>
       </div>
+
+    {/* Diploma courses */}
+    <div className="container mx-auto py-8 px-4">
+      {/* Courses */}
+      <div className='py-12 px-6'>
+      <SectionHeading 
+  title="Our Computer Training Programs"
+  span="Industry Recognized Certifications"
+  description="Launch your digital career with our specialized diploma courses"
+  color="indigo-900"
+/>
+
+
+        {diplomaCourse.map((categoryData, index) => (
+          <div key={index} className="my-16 bg-white bg-opacity-10 backdrop-blur-md shadow-lg rounded-2xl p-8 transition-all hover:shadow-2xl" data-aos="fade-right">
+            <h3 className="text-3xl font-bold flex items-center gap-4 text-blue-300 border-green-600 pl-4 border-l-4">
+              {iconMapping[categoryData.category]} {categoryData.category}
+            </h3>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6">
+              {categoryData.courses.map((course) => (
+                <div key={course.id} className="bg-white bg-opacity-10 rounded-xl p-6 shadow-md transition-all hover:shadow-xl hover:scale-105" >
+                  <div className="  rounded-lg">
+                    <img
+                      src={course.image || Background}
+                      alt={course.title}
+                      className="w-full h-48 object-contain rounded-lg transition duration-500"
+                    />
+                  </div>
+                  <h4 className="text-2xl font-semibold mt-4 text-blue-300" >{course.title}</h4>
+                  <p className="text-gray-300 mt-2">{course.description.slice(0, 80)}...</p>
+                  <Link
+                    to={`/courses/${generatePath(categoryData.category)}/${generatePath(course.title)}`}
+                    className="text-blue-500 hover:text-blue-400 mt-4 inline-block font-semibold transition duration-300"
+                    onClick={handleClick}
+                  >
+                    Learn More →
+                  </Link>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+      </div>
+
+
     <FAQ />
     </section>
   );

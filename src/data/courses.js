@@ -1,5 +1,5 @@
 import { FaLaptopCode, FaPaintBrush, FaDatabase, FaChartLine } from 'react-icons/fa';
-import FullStack from "./assets.js"
+import FullStack from "./assets.js";
 
 const courses = [
   {
@@ -73,7 +73,6 @@ const courses = [
           }
         ]
       },
-      
       {
         id: 2,
         title: 'Java Full-Stack Developer Course',
@@ -141,7 +140,6 @@ const courses = [
           }
         ]
       },
-      
       {
         id: 3,
         title: 'Python Full Stack Developer Course',
@@ -208,12 +206,9 @@ const courses = [
           }
         ]
       }
-      
     ]
   },
 
-  /**************************************************/ 
-  
   {
     category: 'Frontend Development Courses',
     courses: [
@@ -223,7 +218,7 @@ const courses = [
         description: 'Learn React.js to build dynamic and scalable frontend applications.',
         details: 'This course covers JSX, components, state management, hooks, and working with APIs in React. You will also learn Redux and Context API for efficient state management.',
         icon: '⚛️',
-        topics: ['Added', ],
+        topics: [], // Topics not required here
         image: FullStack.ReactStack
       },
       {
@@ -232,13 +227,11 @@ const courses = [
         description: 'Introduction to web development basics for students and beginners.',
         details: 'This course teaches the core building blocks of the web: HTML for structure, CSS for styling, and JavaScript for interactivity. Perfect for beginners looking to start web development.',
         icon: '🌐',
-        topics: ['Added', ],
+        topics: [], // Topics not required here
         image: FullStack.HTML
       }
     ]
   },
-
-  /**************************************************/ 
 
   {
     category: 'Backend Development & Database Courses',
@@ -249,7 +242,7 @@ const courses = [
         description: 'Develop scalable server-side applications using Node.js and Express.',
         details: 'This course covers backend development with Node.js, Express.js, handling databases with MongoDB and MySQL, authentication, and building REST APIs.',
         icon: '🌍',
-        topics: ['Added', ],
+        topics: [], // Topics not required here
         image: FullStack.NodeJS
       },
       {
@@ -258,7 +251,7 @@ const courses = [
         description: 'Learn MySQL for efficient database management and SQL queries.',
         details: 'Understand relational databases, write complex SQL queries, optimize databases, and integrate MySQL with backend technologies.',
         icon: '💾',
-        topics: ['Added', ],
+        topics: [], // Topics not required here
         image: FullStack.MySQL
       },
       {
@@ -267,14 +260,12 @@ const courses = [
         description: 'Master Linux commands, server management, and cloud deployments.',
         details: 'Learn Linux system administration, shell scripting, server setup, and cloud deployment with AWS and Docker.',
         icon: '🐧',
-        topics: ['Added', ],
+        topics: [], // Topics not required here
         image: FullStack.Linux
       }
     ]
   },
 
-  /**************************************************/ 
-  
   {
     category: 'Software Development & Testing',
     courses: [
@@ -284,7 +275,7 @@ const courses = [
         description: 'Comprehensive training in Java programming, OOP concepts, and Spring Boot framework.',
         details: 'Learn Java programming, object-oriented concepts, multithreading, data structures, and backend development with Spring Boot.',
         icon: '☕',
-        topics: ['Added', ],
+        topics: [], // Topics not required here
         image: FullStack.JavaDev
       },
       {
@@ -293,7 +284,7 @@ const courses = [
         description: 'Learn Python programming, Flask/Django, and automation techniques.',
         details: 'Master Python syntax, data structures, automation, web development with Django and Flask, and machine learning basics.',
         icon: '🐍',
-        topics: ['Added', ],
+        topics: [], // Topics not required here
         image: FullStack.Python
       },
       {
@@ -302,13 +293,11 @@ const courses = [
         description: 'Master manual and automation testing with Selenium and JUnit.',
         details: 'Learn software testing fundamentals, manual testing techniques, Selenium WebDriver, JUnit, TestNG, and performance testing.',
         icon: '🛠️',
-        topics: ['Added', ],
+        topics: [], // Topics not required here
         image: FullStack.Selenium
       }
     ]
   },
-
-  /**************************************************/ 
 
   {
     category: 'Mobile App Development',
@@ -319,37 +308,100 @@ const courses = [
         description: 'Learn to build Android applications using Java and Kotlin.',
         details: 'Master Android Studio, UI design, API integration, and database management to create powerful Android apps.',
         icon: '📱',
-        topics: ['Added', ],
+        topics: [], // Topics not required here
         image: '/images/courses/android.jpg'
       }
     ]
-  },
+  },  
+];
 
-  /**************************************************/ 
-
+const diplomaCourse = [
   {
     category: 'Computer & Office Application Courses',
     courses: [
       {
-        id: 13,
+        id: 1,
         title: 'Office Application Course',
         description: 'Learn Microsoft Office tools including Word, Excel, and PowerPoint.',
         details: 'Get hands-on training in Microsoft Word, Excel formulas, PowerPoint presentations, and advanced Excel functions.',
         icon: '📄',
-        topics: ['Added', ],
+        topics: [],
         image: '/images/courses/office.jpg'
       },
       {
-        id: 14,
+        id: 2,
         title: 'Computer Accounting Course',
         description: 'Master Tally, QuickBooks, and accounting software for finance management.',
         details: 'Understand business accounting principles, GST calculations, and financial management using Tally and QuickBooks.',
         icon: '💰',
-        topics: ['Added', ],
+        topics: [],
         image: '/images/courses/accounting.jpg'
+      },
+      {
+        id: 3,
+        title: 'Certificate in Office Applications',
+        description: 'Earn a certificate by mastering essential office software tools.',
+        details: 'This course covers in-depth training in Microsoft Office suite, including advanced features in Word, Excel, and PowerPoint to prepare you for professional environments.',
+        icon: '🎓',
+        topics: [],
+        image: '/images/courses/certificate-office.jpg'
+      },
+      {
+        id: 4,
+        title: 'Desktop Publishing',
+        description: 'Learn the art of desktop publishing and graphic design.',
+        details: 'Gain proficiency in desktop publishing software like Adobe InDesign and QuarkXPress, learn layout design, typography, and prepress processes for professional publishing.',
+        icon: '🖨️',
+        topics: [],
+        image: '/images/courses/desktop-publishing.jpg'
+      },
+      {
+        id: 5,
+        title: 'Certificate in Computer Accounts',
+        description: 'Acquire essential skills in computer-based accounting.',
+        details: 'This course covers the fundamentals of computerized accounting, including the use of popular accounting software, financial reporting, and bookkeeping techniques.',
+        icon: '📊',
+        topics: [],
+        image: '/images/courses/certificate-computer-accounts.jpg'
+      },
+      {
+        id: 6,
+        title: 'Diploma in Computer Application',
+        description: 'A comprehensive diploma covering various computer applications.',
+        details: 'Learn about a range of computer applications including office productivity tools, database management, and basic programming to boost your computer literacy.',
+        icon: '💻',
+        topics: [],
+        image: '/images/courses/diploma-computer-application.jpg'
+      },
+      {
+        id: 7,
+        title: 'Diploma in Multimedia Operation',
+        description: 'Master multimedia tools for creative production.',
+        details: 'This diploma course teaches you video editing, audio production, graphic design, and animation using industry-standard software to prepare you for a career in multimedia production.',
+        icon: '🎬',
+        topics: [],
+        image: '/images/courses/diploma-multimedia.jpg'
+      },
+      {
+        id: 8,
+        title: 'Diploma in Computer Programming',
+        description: 'Develop foundational programming skills with a comprehensive diploma.',
+        details: 'Covering programming fundamentals, algorithm design, and problem-solving techniques, this diploma equips you with essential coding skills using languages such as Python, Java, or C++.',
+        icon: '👨‍💻',
+        topics: [],
+        image: '/images/courses/diploma-programming.jpg'
+      },
+      {
+        id: 9,
+        title: 'Diploma in Hardware Technology',
+        description: 'Learn the fundamentals of computer hardware and technology.',
+        details: 'This course covers computer hardware components, system assembly, troubleshooting, and maintenance techniques to prepare you for roles in IT support and hardware technology.',
+        icon: '🖥️',
+        topics: [],
+        image: '/images/courses/diploma-hardware.jpg'
       }
     ]
   }
-];
+]
 
-export default courses;
+export {courses, diplomaCourse};

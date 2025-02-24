@@ -3,9 +3,9 @@ import { Link, NavLink } from "react-router-dom";
 import MobileSidebar from "../components/MobileSidebar";
 import { FaPhoneAlt, FaEnvelope, FaBars, FaTimes } from "react-icons/fa";
 
-const Header = () => {
+const Header = ({ onToggleSidebar }) => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  // const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,9 +16,9 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen);
-  };
+  // const toggleSidebar = () => {
+  //   setIsSidebarOpen(!isSidebarOpen);
+  // };
 
 
   const activeLinkClass =
@@ -36,8 +36,13 @@ const Header = () => {
     >
       <nav className="container mx-auto flex justify-between items-center px-4 md:px-8">
         {/* Mobile Menu Button */}
-        <button onClick={toggleSidebar} className="md:hidden text-2xl text-gray-700">
+        {/* <button onClick={toggleSidebar} className="md:hidden text-2xl text-gray-700">
         {isSidebarOpen ? <FaTimes /> : <FaBars />}
+        </button> */}
+
+<button onClick={onToggleSidebar} className="md:hidden text-2xl text-gray-700">
+          {/* Icon toggling logic can be moved to Layout */}
+          <FaBars />
         </button>
 
         {/* Logo */}
@@ -113,10 +118,12 @@ const Header = () => {
       </nav>
 
     {/* Mobile Sidebar Component */}
-    {isSidebarOpen && <MobileSidebar onClose={() => setIsSidebarOpen(false)} />}
-
-
-
+    {/* {isSidebarOpen && (
+  <MobileSidebar
+    isSidebarOpen={isSidebarOpen}
+    onClose={() => setIsSidebarOpen(false)}
+  />
+)} */}
     </header>
   );
 };

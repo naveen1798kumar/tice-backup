@@ -1,6 +1,6 @@
 import React from "react";
 
-function SectionHeading({ title, span, description, color="gray-800" }) {
+function SectionHeading({ title, span, description, color="gray-800", textcolor="gray-600" }) {
   return (
     <div className="text-center p-4">
       {/* Title with Responsive Typography */}
@@ -11,7 +11,7 @@ function SectionHeading({ title, span, description, color="gray-800" }) {
       </h2>
 
       {/* Subtitle */}
-      <p className="text-lg sm:text-xl md:text-2xl font-bold">
+      <p className={`text-lg sm:text-xl md:text-2xl text-${textcolor} font-bold leading-relaxed`}>
         <span className="text-green-600 underline underline-offset-4 mr-2">
           {span}
         </span>
