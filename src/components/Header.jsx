@@ -39,92 +39,136 @@ const Header = ({ onToggleSidebar }) => {
           : "bg-gradient-to-r from-gray-100 to-gray-200 py-4"
       }`}
     >
-      <nav className="container mx-auto flex justify-between items-center px-4 md:px-8">
-        {/* Mobile Menu Button */}
-        {/* <button onClick={toggleSidebar} className="md:hidden text-2xl text-gray-700">
-        {isSidebarOpen ? <FaTimes /> : <FaBars />}
-        </button> */}
+<nav className="container mx-auto flex justify-between items-center px-4 md:px-8">
+  {/* Mobile Menu Button */}
+  <button onClick={onToggleSidebar} className="md:hidden text-2xl text-gray-700">
+    <FaBars />
+  </button>
 
-<button onClick={onToggleSidebar} className="md:hidden text-2xl text-gray-700">
-          {/* Icon toggling logic can be moved to Layout */}
-          <FaBars />
-        </button>
+  {/* Logo */}
+  <div className={`font-extrabold tracking-wide text-gray-800 ${isScrolled ? "text-lg" : "text-xl"}`}>
+    <Link to="/">TI<span className="text-indigo-600">CE</span></Link>
+  </div>
 
-        {/* Logo */}
-        <div className={`font-extrabold tracking-wide text-gray-800 ${isScrolled ? "text-lg" : "text-xl"}`}>
-          <Link to="/">TI<span className="text-indigo-600">CE</span></Link>
-        </div>
+  {/* Desktop Navigation */}
+  <ul className="hidden md:flex items-center space-x-4 relative">
+    <li>
+      <NavLink to="/" 
+        className={({ isActive }) =>
+          `px-3 py-2 rounded-md ${
+            isActive ? activeLinkClass : defaultLinkClass
+          }`
+        }
+        onClick={handleClick}
+      >Home</NavLink>
+    </li>
 
-        {/* Desktop Navigation */}
-        <ul className="hidden md:flex items-center space-x-4 ">
-          <li>
-            <NavLink to="/" 
-            className={({ isActive }) =>
-                  `px-3 py-2 rounded-md ${
-                    isActive ? activeLinkClass : defaultLinkClass
-                  }`}
-            onClick={handleClick}
-            >Home</NavLink>
-          </li>
-          <li>
-            <NavLink to="/about"
-            className={({ isActive }) =>
-              `px-3 py-2 rounded-md ${
-                isActive ? activeLinkClass : defaultLinkClass
-              }`}
-            onClick={handleClick}
-            >About</NavLink>
-          </li>
-          <li>
-            <NavLink to="/courses"
-            className={({ isActive }) =>
-              `px-3 py-2 rounded-md ${
-                isActive ? activeLinkClass : defaultLinkClass
-              }`}
-              onClick={handleClick}
-            >Courses</NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact"
-            className={({ isActive }) =>
-              `px-3 py-2 rounded-md ${
-                isActive ? activeLinkClass : defaultLinkClass
-              }`}
-              onClick={handleClick}
-            >Contact</NavLink>
-          </li>
-          <li>
-            <Link className="px-4 py-2 rounded-full bg-green-500 text-white text-sm font-medium shadow-md hover:bg-[##009961] transition-all duration-300" to={"/courses-online"} onClick={handleClick}>
-              Get Started
-            </Link>
-          </li>
-        </ul>
+    <li>
+      <NavLink to="/about"
+        className={({ isActive }) =>
+          `px-3 py-2 rounded-md ${
+            isActive ? activeLinkClass : defaultLinkClass
+          }`
+        }
+        onClick={handleClick}
+      >About</NavLink>
+    </li>
 
+    {/* Courses with Dropdown */}
+    <li className="relative group">
+  <NavLink
+    to="/courses"
+    className={({ isActive }) =>
+      `px-3 py-2 rounded-md ${isActive ? activeLinkClass : defaultLinkClass}`
+    }
+  >
+    Courses
+  </NavLink>
 
-        {/* Mobile Get Started Button */}
-        <button className="md:hidden px-4 py-2 rounded-full bg-green-500 text-white text-sm font-medium shadow-md hover:bg-[##009961] transition-all duration-300" to={"/courses-online"} onClick={handleClick}>
-          Get Started
-        </button>
+  {/* <div className="fixed left-0 top-16 w-full hidden group-hover:block transition-all duration-300 z-50">
+    <div className="bg-white shadow-lg py-4">
+      <div className="max-w-7xl mx-auto grid grid-cols-3 gap-6 px-4">
+        <Link
+          to="/courses/frontend"
+          className="block p-3 hover:bg-gray-100 rounded-md text-center"
+        >
+          Frontend Development
+        </Link>
+        <Link
+          to="/courses/backend"
+          className="block p-3 hover:bg-gray-100 rounded-md text-center"
+        >
+          Backend Development
+        </Link>
+        <Link
+          to="/courses/fullstack"
+          className="block p-3 hover:bg-gray-100 rounded-md text-center"
+        >
+          Full Stack Development
+        </Link>
+        <Link
+          to="/courses/graphic-design"
+          className="block p-3 hover:bg-gray-100 rounded-md text-center"
+        >
+          Graphic Design
+        </Link>
+        <Link
+          to="/courses/digital-marketing"
+          className="block p-3 hover:bg-gray-100 rounded-md text-center"
+        >
+          Digital Marketing
+        </Link>
+        <Link
+          to="/courses/data-science"
+          className="block p-3 hover:bg-gray-100 rounded-md text-center"
+        >
+          Data Science & AI
+        </Link>
+      </div>
+    </div>
+  </div> */}
+    </li>
 
-        {/* Contact Info */}
-        <div className="hidden md:flex flex-col items-end gap-2">
-          {/* Phone */}
-          <div className="flex items-center gap-2">
-            <div className="w-4 h-4 flex items-center justify-center rounded-full bg-gradient-to-r from-red-500 to-orange-400 text-white shadow-md">
-              <FaPhoneAlt className="text-xs"/>
-            </div>
-            <span className="text-gray-800 font-medium text-xs">9876543210</span>
-          </div>
+    <li>
+      <NavLink to="/contact"
+        className={({ isActive }) =>
+          `px-3 py-2 rounded-md ${
+            isActive ? activeLinkClass : defaultLinkClass
+          }`
+        }
+        onClick={handleClick}
+      >Contact</NavLink>
+    </li>
 
-          {/* Email */}
-          <div className="flex items-center gap-2">
-            <div className="w-4 h-4 flex items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 text-white shadow-md">
-              <FaEnvelope className="text-xs"/>
-            </div>
-            <span className="text-gray-800 font-medium text-xs">9876543210@gmail.com</span>
-          </div>
-        </div>
-      </nav>
+    <li>
+      <Link className="px-4 py-2 rounded-full bg-green-500 text-white text-sm font-medium shadow-md hover:bg-[#009961] transition-all duration-300" to="/courses-online" onClick={handleClick}>
+        Get Started
+      </Link>
+    </li>
+  </ul>
+
+  {/* Mobile Get Started Button */}
+  <button className="md:hidden px-4 py-2 rounded-full bg-green-500 text-white text-sm font-medium shadow-md hover:bg-[#009961] transition-all duration-300" onClick={handleClick}>
+    Get Started
+  </button>
+
+  {/* Contact Info */}
+  <div className="hidden md:flex flex-col items-end gap-2">
+    <div className="flex items-center gap-2">
+      <div className="w-4 h-4 flex items-center justify-center rounded-full bg-gradient-to-r from-red-500 to-orange-400 text-white shadow-md">
+        <FaPhoneAlt className="text-xs"/>
+      </div>
+      <span className="text-gray-800 font-medium text-xs">9876543210</span>
+    </div>
+    <div className="flex items-center gap-2">
+      <div className="w-4 h-4 flex items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 text-white shadow-md">
+        <FaEnvelope className="text-xs"/>
+      </div>
+      <span className="text-gray-800 font-medium text-xs">9876543210@gmail.com</span>
+    </div>
+  </div>
+</nav>
+
 
     {/* Mobile Sidebar Component */}
     {/* {isSidebarOpen && (

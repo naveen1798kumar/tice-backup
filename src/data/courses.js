@@ -315,7 +315,7 @@ const courses = [
         detailedDescription: 'The Android Developer Course is perfect for those looking to build mobile applications from scratch. You will learn Android development using Java and Kotlin, covering UI/UX design principles, activity lifecycle, and API integration. The course also includes Firebase for real-time databases, push notifications, and authentication. By the end of the course, you will have hands-on experience building fully functional Android apps.',
         icon: '📱',
         topics: [],
-        image: '/images/courses/android.jpg'
+        image: FullStack.Android
       }
     ]
   }
@@ -324,7 +324,7 @@ const courses = [
 
 const diplomaCourse = [
 {
-  category: 'Computer & Office Application Courses',
+  category: 'Office & Accounting Courses',
   courses: [
     {
       id: 1,
@@ -334,7 +334,7 @@ const diplomaCourse = [
       detailedDescription: 'This course provides a thorough understanding of Microsoft Office applications, equipping you with the skills needed for document creation, data analysis, and professional presentations. You will learn advanced formatting in Word, Excel formulas, functions, and data visualization techniques, along with PowerPoint presentation design. Ideal for students, professionals, and anyone looking to improve their office productivity skills.',
       icon: '📄',
       topics: [],
-      image: '/images/courses/office.jpg'
+      image: FullStack.Office
     },
     {
       id: 2,
@@ -344,7 +344,7 @@ const diplomaCourse = [
       detailedDescription: 'This course is designed for individuals looking to enhance their accounting skills using modern software tools like Tally and QuickBooks. You will learn the fundamentals of financial accounting, bookkeeping, GST calculations, and business transactions. By the end of the course, you will be able to efficiently manage financial records, generate reports, and handle business transactions digitally.',
       icon: '💰',
       topics: [],
-      image: '/images/courses/accounting.jpg'
+      image: FullStack.ComputerAccounting
     },
     {
       id: 3,
@@ -354,70 +354,149 @@ const diplomaCourse = [
       detailedDescription: 'The Certificate in Office Applications course offers a structured approach to learning Microsoft Office tools. You will develop expertise in word processing, spreadsheet management, and presentation design. This certification is ideal for individuals seeking to boost their administrative skills and enhance productivity in a corporate or educational environment.',
       icon: '🎓',
       topics: [],
-      image: '/images/courses/certificate-office.jpg'
+      image: FullStack.OfficeApplication
     },
     {
       id: 4,
-      title: 'Desktop Publishing',
-      description: 'Learn the art of desktop publishing and graphic design.',
-      details: 'Gain proficiency in desktop publishing software like Adobe InDesign and QuarkXPress, learn layout design, typography, and prepress processes for professional publishing.',
-      detailedDescription: 'This course is tailored for aspiring designers and publishing professionals. You will learn to use tools like Adobe InDesign and QuarkXPress to create visually appealing publications, brochures, and magazines. Topics include typography, page layout, color theory, and digital prepress processes. By the end of this course, you will have the skills to design and format content for print and digital media.',
-      icon: '🖨️',
-      topics: [],
-      image: '/images/courses/desktop-publishing.jpg'
-    },
-    {
-      id: 5,
       title: 'Certificate in Computer Accounts',
       description: 'Acquire essential skills in computer-based accounting.',
       details: 'This course covers the fundamentals of computerized accounting, including the use of popular accounting software, financial reporting, and bookkeeping techniques.',
       detailedDescription: 'This course is designed to provide in-depth knowledge of accounting software and financial management. You will learn to record transactions, prepare financial statements, and generate reports using software like Tally and QuickBooks. Ideal for students and professionals aiming to develop strong accounting and financial analysis skills.',
       icon: '📊',
       topics: [],
-      image: '/images/courses/certificate-computer-accounts.jpg'
+      image: FullStack.ComputerAccounting
     },
     {
-      id: 6,
+      id: 5,
+      title: 'Tally',
+      description: 'Acquire essential skills in computer-based accounting.',
+      details: 'This course covers the fundamentals of computerized accounting, including the use of popular accounting software, financial reporting, and bookkeeping techniques.',
+      detailedDescription: '',
+      icon: '📊',
+      topics: [],
+      image: FullStack.Tally
+    },
+  ]
+},
+
+{
+  category: 'Design & Drafting Courses',
+  courses: [
+    {
+      id: 1,
+      title: 'Desktop Publishing',
+      description: 'Learn the art of desktop publishing and graphic design.',
+      details: 'Gain proficiency in desktop publishing software like Adobe InDesign and QuarkXPress, learn layout design, typography, and prepress processes for professional publishing.',
+      detailedDescription: 'This course is tailored for aspiring designers and publishing professionals. You will learn to use industry-standard tools like Adobe InDesign and QuarkXPress to create high-quality publications, brochures, and marketing materials. The course covers key topics such as typography, color theory, layout design, and prepress techniques. By the end of this course, you will be equipped with the skills to design and format print and digital content with precision and creativity.',
+      icon: '🖨️',
+      topics: [],
+      image: FullStack.Publications
+    },
+    {
+      id: 2,
+      title: 'Computer Aided Drafting',
+      description: 'Learn the fundamentals of CAD software for precise drafting and design.',
+      details: 'Gain hands-on experience with AutoCAD and other drafting software to create technical drawings, architectural designs, and engineering blueprints.',
+      detailedDescription: 'This course provides comprehensive training in Computer Aided Drafting (CAD), focusing on creating accurate and detailed technical drawings. You will learn to use industry-standard software like AutoCAD for architectural, mechanical, and civil engineering designs. The curriculum covers essential drafting techniques, 2D and 3D modeling, dimensioning, and blueprint creation. By the end of the course, you will have the expertise to produce professional technical drawings used in engineering, construction, and manufacturing industries.',
+      icon: '📄',
+      topics: [],
+      image: FullStack.Drafting
+    }
+  ]
+},
+
+{
+  category: 'Computer & Programming Courses',
+  courses: [
+    {
+      id: 1,
+      title: 'Machine Learning Programming',
+      description: 'Learn the fundamentals and implementation of machine learning techniques.',
+      details: 'This course covers the core principles of machine learning, algorithms, and AI applications, with hands-on implementation using Python.',
+      detailedDescription: [
+        "Basics of machine learning",
+        "Machine learning algorithms",
+        "Focuses on the principles and techniques",
+        "Implementation in Python",
+        "Focusing on AI",
+        "Including machine learning",
+        "Robotics",
+        "Computer vision"
+      ],
+      icon: '🤖',
+      topics: [],
+      image: FullStack.MachineLearn
+    },
+    {
+      id: 2,
       title: 'Diploma in Computer Application',
       description: 'A comprehensive diploma covering various computer applications.',
       details: 'Learn about a range of computer applications including office productivity tools, database management, and basic programming to boost your computer literacy.',
-      detailedDescription: 'This diploma course provides a strong foundation in computer applications, covering topics such as Microsoft Office, database management, and introductory programming. You will develop skills in document processing, spreadsheet handling, and basic coding, making it ideal for students, office professionals, and beginners looking to enhance their digital skills.',
+      detailedDescription: [
+        "Covers Microsoft Office tools, including Word, Excel, and PowerPoint",
+        "Database management and introduction to SQL",
+        "Basic programming concepts in Python and JavaScript",
+        "Computer fundamentals and troubleshooting",
+        "Practical projects to enhance digital skills"
+      ],
       icon: '💻',
       topics: [],
       image: '/images/courses/diploma-computer-application.jpg'
     },
     {
-      id: 7,
+      id: 3,
       title: 'Diploma in Multimedia Operation',
       description: 'Master multimedia tools for creative production.',
       details: 'This diploma course teaches you video editing, audio production, graphic design, and animation using industry-standard software to prepare you for a career in multimedia production.',
-      detailedDescription: 'This course is designed for individuals interested in multimedia production. You will learn to use tools like Adobe Premiere Pro, After Effects, Photoshop, and Audacity to create engaging visual and audio content. Topics include video editing, animation, sound design, and digital storytelling. By the end of the course, you will be proficient in creating high-quality multimedia projects for social media, marketing, and entertainment industries.',
+      detailedDescription: [
+        "Video Editing",
+        "Adobe Premiere & Flash",
+        "Graphic Design and Animation",
+        "Illustrator",
+        "Sound Forge",
+        "Digital Marketing and Content Creation",
+        "Social Media Marketing",
+        "Photoshop"
+      ],
       icon: '🎬',
       topics: [],
-      image: '/images/courses/diploma-multimedia.jpg'
+      image: FullStack.Multimedia
     },
     {
-      id: 8,
+      id: 4,
       title: 'Diploma in Computer Programming',
-      description: 'Develop foundational programming skills with a comprehensive diploma.',
-      details: 'Covering programming fundamentals, algorithm design, and problem-solving techniques, this diploma equips you with essential coding skills using languages such as Python, Java, or C++.',
-      detailedDescription: 'This diploma course is ideal for beginners who want to step into the world of programming. You will learn the fundamentals of coding, including syntax, data structures, and algorithm design. The course covers multiple programming languages such as Python, Java, and C++, enabling you to build simple applications and software solutions. By the end of this course, you will be prepared to pursue a career in software development or further your studies in programming.',
+      description: 'Comprehensive training in programming languages and software development.',
+      details: 'Learn core programming concepts, algorithm design, and hands-on coding in Python, Java, and C++ to develop real-world applications.',
+      detailedDescription: [
+        "Programming fundamentals and logic building",
+        "Hands-on coding in Python, Java, and C++",
+        "Data structures and algorithms",
+        "Problem-solving techniques",
+        "Project-based learning with real-world applications"
+      ],
       icon: '👨‍💻',
       topics: [],
       image: '/images/courses/diploma-programming.jpg'
     },
     {
-      id: 9,
+      id: 5,
       title: 'Diploma in Hardware Technology',
       description: 'Learn the fundamentals of computer hardware and technology.',
       details: 'This course covers computer hardware components, system assembly, troubleshooting, and maintenance techniques to prepare you for roles in IT support and hardware technology.',
-      detailedDescription: 'This course is perfect for individuals interested in understanding the inner workings of computer hardware. You will learn about computer components, assembly, troubleshooting, and system maintenance. The course also covers networking basics, peripheral device management, and hardware repair techniques. By the end of the course, you will have the skills needed for IT support roles and computer maintenance services.',
+      detailedDescription: [
+        "Computer Fundamentals and Operating Systems",
+        "Computer Assembling",
+        "Software Installation",
+        "Networking",
+        "Virus Removal, etc."
+      ],
       icon: '🖥️',
       topics: [],
-      image: '/images/courses/diploma-hardware.jpg'
+      image: FullStack.HardwareTech
     }
   ]
 }
+
 
 ]
 
